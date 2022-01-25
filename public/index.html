@@ -1,74 +1,98 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-    blablabla
-    </head>
-
-    <body>
+   <head>
+       <title>Page title shown in window title</title> <!-- Kommentar -->
+       <meta charset="utf-8"/>
+   </head>
+   <body>
         <header>
-            <h1>Welcome to my website</h1> 
+        <h1> Välkommen till min webshop </h1>
         </header>
-
         <main>
-            <section id="Burger_info">
-                <img src="img/polacks.jpg" style="width: 100px;">
-                <div style="display: inline-block;">
-                <ul>
-                    <h3>map</h3>
-                    <li>Increases fat</li>
-                </ul>
-            </div>
-            <img src="img/polacks.jpg" style="width: 120px;">
+            <section>
+            <h3> Vänligen välj produkt </h3>
+            <div> här väljer du produkt</div>
+
             <div style="display: inline-block;">
+            <h4>Air Jordan 1 "Chicago"</h4>
+            <img src="img/chicago.jpeg" title="AJ1" style="width: 150px;">
+            <ul>
+                <li> Never worn </li>
+                <li> Comes with receipt </li>
+            </ul>
+            </div>
+
+            <div style="display: inline-block;">
+                <h4>Air Jordan 1 "Royal"</h4>
+                <img src="img/royal.jpeg" title="AJ2" style="width: 150px;">
                 <ul>
-                    <h3>map number 2</h3>
-                    <li>Increases fat</li>
+                    <li> Worn once </li>
+                    <li> Comes with receipt </li>
                 </ul>
             </div>
+
+            <div style="display: inline-block;">
+                <h4>Air Jordan 1 "Bred"</h4>
+                <img src="img/bred.jpeg" title="AJ3" style="width: 150px;">
+                <ul>
+                    <li> DSWT </li>
+                    <li> Comes with receipt </li>
+                </ul>
+            </div>
+
             </section>
-
-            <section id="Order_info">
-                <h2>Order with us</h2>
-                <form>
+            <section>
+                <h4> Ange leveransinformation </h4>
+                <div>här anger du nödvändig information</div>
+                <div>
+                    <h4>leveransinformation </h4>
                     <p>
-                    <label for="username">Name:</label>
-                    <input type= "text" id="username" name="username" placeholder="first and last name" required="required">
+                        <label for="name">Full name</label><br>
+                        <input type="text" id="username" name="username" required="required" placeholder="First and last name">
                     </p>
                     <p>
-                    <label for="email">Email:</label>
-                    <input type= "email" id="email" name="username" placeholder="email" required="required">
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
                     </p>
                     <p>
-                    <label for="street">Street Name:</label>
-                    <input type= "text" id="street" name="username" placeholder="streetname" required="required">
+                        <label for="street">Street</label><br>
+                        <input type="text" id="street" name="street" required="required" placeholder="Street name">
+                    </p>
+                    <p>
+                        <label for="hn">House</label><br>
+                        <input type="number" id="hn" name="hn" required="required" placeholder="House number">
                     </p>
 
                     <p>
-                        <label for="payment"> Payment Method </label>
-                        <select name="payment" id="payment">
-                            <option value="Cash on Deliver"> Cash on Delivery </option>
-                            <option value="Klarna"> Klarna </option>
-
+                        <label for="recipient">Payment option</label><br>
+                        <select id="recipient" name="rcp">
+                            <option>Paper invoice</option>
+                            <option>Cash on Delivery</option>
+                            <option selected="selected">Credit/Debit Card</option>
+                            <option>Klarna</option>
                         </select>
-                    </p>
-                    <p>
-                        <input type="radio" name="map" value="map1">
-                        <label for="map1"> Map number one</label>
-                        <input type="radio" name="map" value="map2">
-                        <label for="map2"> Map number two</label>
-                    </p>
+                     </p>
 
-                </form>
-                <button type="submit">
-                    <img src="img/polacks.jpg" style="width: 25px;">
-                    Order
-                </button>
+                    
+                     <p>
+                        Gender<br>
+                         <input type="radio" name="gender">
+                         <label for="male" style="display: inline-block;"> Male </label> <br>
+                         <input type="radio" name="gender">
+                         <label for="female" style="display: inline-block;"> Female </label> <br>
+                         <input type="radio" name="gender">
+                         <label for="not" style="display: inline-block;"> Do not wish to provide </label>
+                    </p>
+                </div>
             </section>
+            <button type="submit">
+                <img src="img/polacks.jpg" style="width: 5px;">
+                Send Info
+            </button>
         </main>
-
         <footer>
             <hr>
-            &copy; 2022 Misha Messo <a href=http://gtasanandreas.com> San Andreas</a> Foods
+            &copy; 2022 Misha Messo
         </footer>
-    </body>
+   </body>
 </html>
